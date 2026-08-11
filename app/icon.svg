@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="metal" x1="5" y1="5" x2="59" y2="59">
+      <stop stop-color="#fff"/>
+      <stop offset=".3" stop-color="#555"/>
+      <stop offset=".5" stop-color="#fff"/>
+      <stop offset=".72" stop-color="#444"/>
+      <stop offset="1" stop-color="#ddd"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="17" fill="#050816"/>
+
+  <path d="M10 46
+           V25
+           C10 19 18 18 21 24
+           L32 39
+           L43 24
+           C46 18 54 19 54 25
+           V46"
+        fill="none"
+        stroke="url(#metal)"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <path d="M34 14C35 9 39 7 44 8C43 12 40 15 35 16"
+        fill="url(#metal)"/>
+</svg>
