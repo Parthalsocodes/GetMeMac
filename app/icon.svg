@@ -1,29 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="metal" x1="5" y1="5" x2="59" y2="59">
-      <stop stop-color="#fff"/>
-      <stop offset=".3" stop-color="#555"/>
-      <stop offset=".5" stop-color="#fff"/>
-      <stop offset=".72" stop-color="#444"/>
-      <stop offset="1" stop-color="#ddd"/>
+    <linearGradient id="chrome"
+      x1="8" y1="4"
+      x2="56" y2="60"
+      gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.22" stop-color="#777777"/>
+      <stop offset="0.42" stop-color="#ffffff"/>
+      <stop offset="0.62" stop-color="#444444"/>
+      <stop offset="0.82" stop-color="#eeeeee"/>
+      <stop offset="1" stop-color="#666666"/>
     </linearGradient>
   </defs>
 
-  <rect width="64" height="64" rx="17" fill="#050816"/>
+  <!-- Chrome M -->
+  <path
+    d="M9 48V20
+       C9 16 15 15 18 20
+       L32 38
+       L46 20
+       C49 15 55 16 55 20
+       V48"
+    fill="none"
+    stroke="url(#chrome)"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 
-  <path d="M10 46
-           V25
-           C10 19 18 18 21 24
-           L32 39
-           L43 24
-           C46 18 54 19 54 25
-           V46"
-        fill="none"
-        stroke="url(#metal)"
-        stroke-width="6"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-
-  <path d="M34 14C35 9 39 7 44 8C43 12 40 15 35 16"
-        fill="url(#metal)"/>
+  <!-- Leaf -->
+  <path
+    d="M34 14
+       C35 8 41 6 46 8
+       C44 13 40 16 34 17Z"
+    fill="url(#chrome)"
+  />
 </svg>
