@@ -130,12 +130,12 @@ const page = () => {
 
                                 <h2 className="text-3xl font-bold">
 
-                                    {moneyraised}
+                                    ₹{moneyraised}
                                 </h2>
 
                                 <p className="text-gray-500 mt-2">
 
-                                    raised of ₹1,20,000 goal
+                                    raised of a ₹1,20,000 goal
 
                                 </p>
 
