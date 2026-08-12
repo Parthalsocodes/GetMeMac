@@ -99,6 +99,8 @@ razor.open();
       <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-xl border-b border-gray-200 z-50">
         <div className="max-w-7xl mx-auto h-20 px-6 flex items-center justify-between">
 
+          
+
           <h1 onClick={()=>router.push("/")} className="text-3xl font-bold cursor-pointer">
             Get<span className="text-blue-600">MeMac</span>
           </h1>
@@ -125,14 +127,10 @@ razor.open();
 
           <div className="flex items-center gap-4">
 
-            <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center">
-              P
-            </div>
+             <img className='w-10 h-10 rounded-full' src={session?.user?.image || "."} alt="Profile" referrerPolicy="no-referrer" />
 
-            <h1 className="font-semibold">
-              Parth Modi
-            </h1>
-
+             <h1>{session?.user?.name}</h1>
+             
             <button className="px-5 py-2 rounded-full border border-red-200 bg-red-50 text-red-600 font-semibold hover:bg-red-600 hover:text-white transition">
               Sign Out
             </button>
